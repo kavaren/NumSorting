@@ -16,5 +16,11 @@ namespace SimpleCalcu
         {
             InitializeComponent();
         }
+
+        private void generate_Click(object sender, EventArgs e)
+        {
+            listGenNum.Items.Clear();
+            listGenNum.Items.Add("lul");
+        }
     }
 }
