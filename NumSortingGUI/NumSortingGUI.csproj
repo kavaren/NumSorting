@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8F66042C-E2EF-4A82-85AD-F8E3771E2590}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SimpleCalcu</RootNamespace>
-    <AssemblyName>SimpleCalcu</AssemblyName>
+    <RootNamespace>NumSortingGUI</RootNamespace>
+    <AssemblyName>NumSorting</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
