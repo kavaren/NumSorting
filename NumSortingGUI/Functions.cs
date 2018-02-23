@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace NumSortingGUI
 {
     /// <summary>
-    /// Generates 10 random numbers
+    /// Generates X random numbers
     /// </summary>
     internal class Functions
     {
@@ -26,11 +26,41 @@ namespace NumSortingGUI
 
         internal static List<int> BubbleSort(List<int> genlist)
         {
-            List<int> sortedBubble = new List<int>();
+            
+            int b;
+            try
+            {
+                for (int c = 0; c < genlist.Count - 1; c++)
+                {
+                    for (int i = 0; i < genlist.Count - 1; i++)
+                    {
+                        if (genlist[i] > genlist[i + 1])
+                        {
+                            b = genlist[i + 1];
+                            genlist[i + 1] = genlist[i];
+                            genlist[i] = b;
+                        }
+                    }
+                }
+            }
+            catch (NullReferenceException)
+            {
+                Debug.WriteLine("Genlist empty");
+            }
+            
 
-
-            return sortedBubble;
+            return genlist;
         }
+        internal static List<int> BubbleSort(List<int> genlist, out TimeSpan timeElapsed)
+        {
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
 
+            genlist = BubbleSort(genlist);
+
+            stopWatch.Stop();
+            timeElapsed = stopWatch.Elapsed;
+            return genlist;
+        }
     }
 }

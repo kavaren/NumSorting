@@ -47,7 +47,15 @@ namespace NumSortingGUI
 
         private void SortButton_Click(object sender, EventArgs e)
         {
+            listBubble.Items.Clear();
 
+            List<int> sortedBubble = new List<int>();
+            sortedBubble = BubbleSort(randomNumWrite, out TimeSpan timeElapsed);
+            foreach (var item in sortedBubble)
+            {
+                listBubble.Items.Add(item);
+            }
+            label5.Text = Convert.ToString(timeElapsed.TotalMilliseconds) + " ms";
         }
     }
 }

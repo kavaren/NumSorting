@@ -32,7 +32,7 @@
             this.listGenNum = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SortButton = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBubble = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
@@ -93,14 +93,14 @@
             this.SortButton.UseVisualStyleBackColor = true;
             this.SortButton.Click += new System.EventHandler(this.SortButton_Click);
             // 
-            // listBox1
+            // listBubble
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(259, 151);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(121, 580);
-            this.listBox1.TabIndex = 5;
+            this.listBubble.FormattingEnabled = true;
+            this.listBubble.ItemHeight = 16;
+            this.listBubble.Location = new System.Drawing.Point(259, 151);
+            this.listBubble.Name = "listBubble";
+            this.listBubble.Size = new System.Drawing.Size(121, 580);
+            this.listBubble.TabIndex = 5;
             // 
             // listBox2
             // 
@@ -249,7 +249,7 @@
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBubble);
             this.Controls.Add(this.SortButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listGenNum);
@@ -270,7 +270,7 @@
         private System.Windows.Forms.ListBox listGenNum;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button SortButton;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBubble;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox4;
