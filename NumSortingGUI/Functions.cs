@@ -24,9 +24,13 @@ namespace NumSortingGUI
             return genlist;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="genlist"></param>
+        /// <returns></returns>
         internal static List<int> BubbleSort(List<int> genlist)
         {
-            
             int b;
             try
             {
@@ -47,10 +51,14 @@ namespace NumSortingGUI
             {
                 Debug.WriteLine("Genlist empty");
             }
-            
-
             return genlist;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="genlist"></param>
+        /// <param name="timeElapsed"></param>
+        /// <returns></returns>
         internal static List<int> BubbleSort(List<int> genlist, out TimeSpan timeElapsed)
         {
             Stopwatch stopWatch = new Stopwatch();

@@ -24,11 +24,11 @@ using static NumSortingGUI.Functions;
 /// </summary>
 namespace NumSortingGUI
 {
-    public partial class Form1 : Form
+    public partial class GUI : Form
     {
         private static List<int> randomNumWrite;
 
-        public Form1()
+        public GUI()
         {
             InitializeComponent();
         }
@@ -49,8 +49,16 @@ namespace NumSortingGUI
         {
             listBubble.Items.Clear();
 
+            //init
             List<int> sortedBubble = new List<int>();
+
+
+            //functions
             sortedBubble = BubbleSort(randomNumWrite, out TimeSpan timeElapsed);
+
+
+
+            //display
             foreach (var item in sortedBubble)
             {
                 listBubble.Items.Add(item);
